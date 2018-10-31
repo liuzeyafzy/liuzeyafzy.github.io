@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="http, protocol," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,18 +79,17 @@
 
 
 
-<meta name="description" content="概述HTTP是一种能够获取如HTML这样的网络资源的通信协议。它是在广域网上进行数据交换的基础，是一种clinet-server协议，也就是说，请求通常是由像浏览器这样的接收方发起的。一个完整的Web文档通常是由不同的子文档拼接而成的，像是文本、样式、图片、视频、脚本等。我们可以在chrome的调试工具的Network项看到这些分类，当然了，Network项中还包含了数据流，如XHR（XMLHtt">
-<meta name="keywords" content="http, protocol">
+<meta name="description" content="Http 缓存重用已获取的资源能够有效的提升网站与应用的性能。具体体现在减少延迟、减少网络阻塞、降低流量损耗。 网络的种类大致可以分为两类：私有缓存、共享缓存。顾名思义，共享缓存存储的响应能够被多个用户使用，而私有缓存只能用于单独用户。我们都知道，当用户在浏览器地址栏输入了网页地址之后，浏览器通过网络找服务器获取数据。网络是一个很大的集合，也许就有一台服务器专门拦截请求，并返回所请求资源的拷贝。细">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Http 概述">
-<meta property="og:url" content="http://yoursite.com/2018/10/24/Http/index.html">
+<meta property="og:title" content="Http 缓存">
+<meta property="og:url" content="http://yoursite.com/2018/10/31/Http-缓存/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="概述HTTP是一种能够获取如HTML这样的网络资源的通信协议。它是在广域网上进行数据交换的基础，是一种clinet-server协议，也就是说，请求通常是由像浏览器这样的接收方发起的。一个完整的Web文档通常是由不同的子文档拼接而成的，像是文本、样式、图片、视频、脚本等。我们可以在chrome的调试工具的Network项看到这些分类，当然了，Network项中还包含了数据流，如XHR（XMLHtt">
+<meta property="og:description" content="Http 缓存重用已获取的资源能够有效的提升网站与应用的性能。具体体现在减少延迟、减少网络阻塞、降低流量损耗。 网络的种类大致可以分为两类：私有缓存、共享缓存。顾名思义，共享缓存存储的响应能够被多个用户使用，而私有缓存只能用于单独用户。我们都知道，当用户在浏览器地址栏输入了网页地址之后，浏览器通过网络找服务器获取数据。网络是一个很大的集合，也许就有一台服务器专门拦截请求，并返回所请求资源的拷贝。细">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-31T11:39:01.060Z">
+<meta property="og:updated_time" content="2018-10-31T12:27:50.061Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Http 概述">
-<meta name="twitter:description" content="概述HTTP是一种能够获取如HTML这样的网络资源的通信协议。它是在广域网上进行数据交换的基础，是一种clinet-server协议，也就是说，请求通常是由像浏览器这样的接收方发起的。一个完整的Web文档通常是由不同的子文档拼接而成的，像是文本、样式、图片、视频、脚本等。我们可以在chrome的调试工具的Network项看到这些分类，当然了，Network项中还包含了数据流，如XHR（XMLHtt">
+<meta name="twitter:title" content="Http 缓存">
+<meta name="twitter:description" content="Http 缓存重用已获取的资源能够有效的提升网站与应用的性能。具体体现在减少延迟、减少网络阻塞、降低流量损耗。 网络的种类大致可以分为两类：私有缓存、共享缓存。顾名思义，共享缓存存储的响应能够被多个用户使用，而私有缓存只能用于单独用户。我们都知道，当用户在浏览器地址栏输入了网页地址之后，浏览器通过网络找服务器获取数据。网络是一个很大的集合，也许就有一台服务器专门拦截请求，并返回所请求资源的拷贝。细">
 
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/24/Http/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/31/Http-缓存/"/>
 
 
 
 
 
-  <title>Http 概述 | Hexo</title>
+  <title>Http 缓存 | Hexo</title>
   
 
 
@@ -233,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/24/Http/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/31/Http-缓存/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
@@ -250,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Http 概述</h1>
+          <h1 class="post-title" itemprop="name headline">Http 缓存</h1>
         
 
         <div class="post-meta">
@@ -262,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-24T20:11:29+08:00">
-                2018-10-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-31T19:56:56+08:00">
+                2018-10-31
               </time>
             
 
@@ -300,12 +299,10 @@
       
 
       
-        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>HTTP是一种能够获取如HTML这样的网络资源的通信协议。它是在广域网上进行数据交换的基础，是一种clinet-server协议，也就是说，请求通常是由像浏览器这样的接收方发起的。一个完整的Web文档通常是由不同的子文档拼接而成的，像是文本、样式、图片、视频、脚本等。我们可以在chrome的调试工具的Network项看到这些分类，当然了，Network项中还包含了数据流，如XHR（XMLHttpReqest）、WS（Websocket）。</p>
-<p>需要特别关注这样一个流程，浏览器B发送请求给服务器S，服务器S再返回数据给浏览器B。请求被叫做request，返回数据被叫做response，这两个名词在几乎所有的网络相关的API及RFC中都有出现，不论是chrome调试工具，还是nodejs对于http的API，抑或者是python抓包用到的requests模块。</p>
-<p>浏览器与服务器并不一定是直接连接的——通常情况下都不是直接连接的。在他们之间，还有路由器、调制解调器等许多计算机。由于Web的层次设计，那些在网络层和传输层的细节都被隐藏起来了。HTTP位于最上层的应用层。虽然底层对于分析网络问题非常重要，但是大多跟对HTTP的描述不相干。大致的，HTTP传输过程中能够感知到的有三个部分：客户端（user-agent）、Web服务器、代理（Proxies）。客户端和Web服务器就不赘述了，但是代理还是需要在这里多说一些。在手机上调试前端代码是比较艰苦的，诚然我们可以用chrome调试工具的“仿造手机平板”功能，但有些只在手机上出现的问题chrome就没什么用了。这个时候怎么办呢？可以试试charles（Mac）或者fiddler（Windows），在手机wifi配置下代理，填入电脑的ip和软件监听的端口，手机通过电脑来访问服务器，每个http请求都可以在软件中看到。如果是加密了的https请求，也可以通过软件导入证书来解析。这样说起来，我也能理解为什么2012年左右学的Wireshark在前端不怎么火了，操作麻烦不说，还不一定有导入证书的功能。</p>
-<p>请求报文（request）由这些元素组成：<br>  一个HTTP的method，通常是由一个动词像<em>GET</em> <em>POST</em> 或者一个名词像<em>OPTIONS</em>，<em>HEAD</em>来定义客户端的动作行为。兴起的RESTful架构风格接口就要用到好几种method<br>  要获取的资源的路径，通常是上下文中就很明显的元素资源的URL，不含protocol、domain、port<br>  HTTP协议版本号。到目前为止最常用的应该还是HTTP/1.1，最新的是HTTP/2。<br>  为服务端表达其他信息的可选头部headers。<br>  对于一些像POST这样的方法，报文的body就包含了发送的资源（GET方法没有）</p>
-<p>响应报文包含了下面的元素：<br>  HTTP协议版本号<br>  一个状态码。从1到5开头的三位数，具体含义很多地方都有，就不说了。<br>  一个状态信息，这个信息是非权威的状态码描述信息，可以由服务端自行设定。RESTful架构风格接口其实也会用到响应报文的状态码和状态信息。不过以前我没接触过，更多的是在返回体中返回一个对象，再带code和msg字段。<br>  HTTP headers，与请求头部类似<br>  可选项，比起请求报文，响应报文中更常见地包含获取的资源body。当然啦，也有不含body的响应报文。试试请求method为HEAD。</p>
-
+        <h1 id="Http-缓存"><a href="#Http-缓存" class="headerlink" title="Http 缓存"></a>Http 缓存</h1><p>重用已获取的资源能够有效的提升网站与应用的性能。具体体现在减少延迟、减少网络阻塞、降低流量损耗。</p>
+<p>网络的种类大致可以分为两类：私有缓存、共享缓存。顾名思义，共享缓存存储的响应能够被多个用户使用，而私有缓存只能用于单独用户。我们都知道，当用户在浏览器地址栏输入了网页地址之后，浏览器通过网络找服务器获取数据。网络是一个很大的集合，也许就有一台服务器专门拦截请求，并返回所请求资源的拷贝。细分来说，网关缓存和CDN都是在公网上的，而反向代理缓存以及基于反向代理做的负载均衡是部署在服务器上的，或者说组成了服务器的一部分。每个用户都可以走到这一条网络路径上，所以被称为共享缓存。而私有缓存出现在浏览器这一块，是浏览器的一部分。一般来说，单次请求时粗略的流程会是这样（不要在意省略的步骤）：首先浏览器找自己缓存的数据，如果没有则发送请求，此时网关判断是否有缓存，没有则可能往CDN服务器去查找（当然啦，填了这个就不能填服务器的地址了，但是这也算是一种缓存），如果地址不是执行CDN而是指向服务器，服务器本身可能是做了反向代理（也可以用某种我所不知道的方式做缓存），然后再判断所请求的资源是否有修改，如果有才返回新的资源。在这么一个经过了省略依旧显得漫长的过程中，但凡能够发现缓存，则不会继续走下去。</p>
+<p>常见的HTTP缓存只能存储GET响应，对于其他类型的响应则无能为力。判断是否存在缓存的关键数据则是Method和目标URI，为什么一般只有GET请求才会被缓存呢？因为其他大部分Method都会操作服务器（按我的猜测HEAD方法应该也不会操作服务器才对，但是没试验过不下结论）。</p>
+<h1 id="缓存控制"><a href="#缓存控制" class="headerlink" title="缓存控制"></a>缓存控制</h1>
       
     </div>
     
@@ -320,12 +317,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/http-protocol/" rel="tag"># http, protocol</a>
-          
-        </div>
-      
 
       
       
@@ -335,8 +326,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/12/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2018/10/24/Http/" rel="next" title="Http 概述">
+                <i class="fa fa-chevron-left"></i> Http 概述
               </a>
             
           </div>
@@ -344,10 +335,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/31/Http-缓存/" rel="prev" title="Http 缓存">
-                Http 缓存 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -470,7 +457,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Http-缓存"><span class="nav-number">1.</span> <span class="nav-text">Http 缓存</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#缓存控制"><span class="nav-number">2.</span> <span class="nav-text">缓存控制</span></a></li></ol></div>
             
 
           </div>
