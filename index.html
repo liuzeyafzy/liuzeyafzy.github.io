@@ -331,7 +331,7 @@
 <h2 id="Warning"><a href="#Warning" class="headerlink" title="Warning"></a>Warning</h2><p>用来包含状态码之外的状态或传输的额外信息。warning可以用来存储缓存之外的信息。使用warning可以将响应和直接返回错误码的错误区分开来。<br>一个响应可以有多个warning，同时生成者也不局限于原始的服务器，缓存模块也可以生成warning。</p>
 <p>warnings有三位数字，1xx描述了响应的新鲜度或验证状态，因此必须在验证后被缓存删除。他同时只能是缓存在验证时生成，而不能在其他任何情况下生成。<br>2xx表示某些方面没有通过验证进行修复——例如有损压缩——除非发送完整响应，否则在验证后他们不能被缓存删除。也就是说，存储的有损压缩的缓存数据在没有接收完整数据（从而可以重新缓存）的情况下，是不能简单的跟服务器验证后就删除的。</p>
 <h1 id="历史机制"><a href="#历史机制" class="headerlink" title="历史机制"></a>历史机制</h1><p>用户代理通常具有历史机制，例如“后退”按钮和历史列表。可用于重新显示之前的会话。新鲜度相关的模型并不能限制历史机制，也就是说历史机制依旧可以显示出依旧不再新鲜了的表述。当然了，也并不禁止历史机制告诉用户视图可能过时，也并不禁止历史机遵守缓存指令。</p>
-<h1 id="IANA-注意事项——IANA是INTERNET域名系统的最高权威机构"><a href="#IANA-注意事项——IANA是INTERNET域名系统的最高权威机构" class="headerlink" title="IANA 注意事项——IANA是INTERNET域名系统的最高权威机构"></a>IANA 注意事项——IANA是INTERNET域名系统的最高权威机构</h1><h2 id="缓存指令注册表"><a href="#缓存指令注册表" class="headerlink" title="缓存指令注册表"></a>缓存指令注册表</h2><p>定义了缓存指令的命名空间，详情参阅(这里[<a href="http://www.iana.org/assignments/http-cache-directives]" target="_blank" rel="noopener">http://www.iana.org/assignments/http-cache-directives]</a></p>
+<h1 id="IANA-注意事项——IANA是INTERNET域名系统的最高权威机构"><a href="#IANA-注意事项——IANA是INTERNET域名系统的最高权威机构" class="headerlink" title="IANA 注意事项——IANA是INTERNET域名系统的最高权威机构"></a>IANA 注意事项——IANA是INTERNET域名系统的最高权威机构</h1><h2 id="缓存指令注册表"><a href="#缓存指令注册表" class="headerlink" title="缓存指令注册表"></a>缓存指令注册表</h2><p>定义了缓存指令的命名空间，详情参阅(这里[<a href="http://www.iana.org/assignments/http-cache-directives]" target="_blank" rel="noopener">http://www.iana.org/assignments/http-cache-directives]</a><br>emmmmm，根据参阅顺带的还看到了RFC8246，讲述了<code>HTTP Immutable Responses</code>的文档，也就知道了IANA是每个RFC文档都会有的东西，而且所描述的历史文档的关联性对我们的整体理解很有帮助。</p>
 
           
         
